@@ -1,33 +1,29 @@
-# Design Pattern in C++ Learning Notes
+//
+// Created by weichien on 29/09/2018.
+//
 
-[Course Link](https://www.udemy.com/patterns-cplusplus/)
+enum class Color {red, green, blue};
+enum class Size {small, medium, large};
 
-Common architectural approaches.
-
-
-## SOLID Design Principle
-
-### Single Responsibility Principle 
-A class should have single reason to change or take only one responsibility.
-
-```c++
-struct PersistenceManager
+struct Product
 {
-    static void save(const Journal& j, const string& filename)
+    string name;
+    Color color;
+    Size size;
+};
+
+struct ProductFilter
+{
+    vector<Product*> by_color(vector<Product*> items, Color color)
     {
-        ofstream ofs(filename);
-        for(auto &e : j.entries) {
-            ofs << e << endl;
-        }
+        vector<Product*> result;
+        for(auto& i : items)
+            if(i->color == color)
+                result.push_back(i);
+        return result;
     }
 };
-```
 
-### Open-Closed Principle
-Your assistance should be open for extension.
-Avoid to jump into the code you have already writen.
-
-```c++
 /* Specification Interface */
 template <typename T> struct Specification
 {
@@ -94,9 +90,11 @@ template <typename T> struct AndSpecification : Specification<T>
         return first.is_satisfied(item) && second.is_satisfied(item);
     }
 };
-```
 
-```c++
+
+
+/* If manager asked you to make sure products could be filtered by size */
+/* Then you need to modify the name of mehtod and also the arguments.  */
 int main()
 {
     Product apple{"Apple", Color::green, Size::small};
@@ -121,8 +119,6 @@ int main()
     SizeSpecification large(Size::large);
     AndSpecification<Product> green_and_large(green, large);
 
-    /* Same method of combining both SizeSpecification and ColorSpecification */
-    /* By overriding the operator "&&" in the Specification class */
     auto spec = ColorSpecification(Color::green)
                 && SizeSpecification(Size::large);
 
@@ -132,38 +128,3 @@ int main()
 
     return 0;
 }
-
-```
-
-
-## Creational 
-- Builder
-- Factories: Abstract Factory, Factory Method
-- Prototype
-- Singleton
-
-## Structural 
-- Adapter
-- Bridge
-- Composite
-- Decorator
-- Facade
-- Flyweight
-- Proxy
-
-## Behavioral
-- Chain of Responsibility
-- Command
-- Interpreter
-- Iterator
-- Mediator
-- Memento
-- Observer
-- State
-- Stategy
-- Template Method
-- Visitor
-
-***
-
-
