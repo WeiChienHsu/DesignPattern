@@ -157,6 +157,46 @@ int main()
 
 ### Liskov Substitution Principle
 
+Subtypes must be substitutable for their base types.
+
+When this principle is violated, it tends to result in a lot of extra conditional logic scattered throughout the application, checking to see the specific type of an object. This duplicate, scattered code becomes a breeding ground for bugs as the application grows.
+
+```
+Inheritance:
+
+One object can be designed to inherit from another if it always has an 
+            “IS-SUBSTITUTABLE-FOR” relationship with the inherited object.
+```
+
+A common code smell that frequently indicates an LSP violation is the presence of type checking code within a code block that should be polymorphic. For instance, if you have a foreach loop over a collection of objects of type Foo, and within this loop there is a check to see if Foo is in fact Bar (subtype of Foo), then this is almost certainly an LSP violation. If instead you ensure Bar is in all ways substitutable for Foo, there should be no need to include such a check.
+
+```c++
+/* Valid the case in Square */
+void process(Rectangle& r)
+{
+    int w = r.getWidth();
+    r.setHeight(10); /* Also set Width as 10 in Square */
+
+    cout << "excepted area = " << (w*10)
+        << " , got " << r.area() << endl;
+}
+
+int main() {
+    Rectangle r{3, 4};
+    process(r); /* Excepted 40, got 40 */
+
+    Square sq{5};
+    process(sq); /* Excepted 50, got 100 */
+
+
+    return 0;
+}
+
+```
+
+
+
+
 
 ### Interface Segregation Principle
 
