@@ -1,6 +1,7 @@
 # Design Pattern in C++ Learning Notes
 
 [Course Link](https://www.udemy.com/patterns-cplusplus/)
+[References resources - Deviq](https://deviq.com/solid/)
 
 Common architectural approaches.
 
@@ -9,6 +10,23 @@ Common architectural approaches.
 
 ### Single Responsibility Principle 
 A class should have single reason to change or take only one responsibility.
+
+All of the contents of a single class are tightly coupled together, since the class itself is a single unit that must either be entirely used or not at all (discounting static methods and data for the moment). When other classes make use of a particular class, and that class changes, the depending classes must be tested to ensure they continue to function correctly with the new behavior of the class. 
+
+We define each responsibility of a class as a reason for change.  If you can think of more than one motivation for changing a class, it probably has more than one responsibility.  When these axes of change occur, the class will probably need to have different aspects of its behavior changed, at different times and for different reasons.
+
+
+#### Some examples of responsibilities to consider that may need to be separated include:
+
+- Persistence
+- Validation
+- Notification
+- Error Handling
+- Logging
+- Class Selection / Instantiation
+- Formatting
+- Parsing
+- Mapping
 
 ```c++
 struct PersistenceManager
@@ -24,8 +42,10 @@ struct PersistenceManager
 ```
 
 ### Open-Closed Principle
-Your assistance should be open for extension.
+Software entities (classes, modules, methods, etc.)  should be open for extension, but closed for modification.
 Avoid to jump into the code you have already writen.
+
+
 
 ```c++
 /* Specification Interface */
@@ -134,6 +154,14 @@ int main()
 }
 
 ```
+
+### Liskov Substitution Principle
+
+
+### Interface Segregation Principle
+
+
+### Dependency Inversion Principle
 
 
 ## Creational 
