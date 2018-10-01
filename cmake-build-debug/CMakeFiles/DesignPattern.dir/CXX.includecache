@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/weichien/Programming/DesignPattern/LiskovSubstitutionPrinciple.cpp
+iostream
+-
+
+/Users/weichien/Programming/DesignPattern/main.cpp
+

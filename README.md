@@ -191,7 +191,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 
@@ -199,6 +198,13 @@ int main() {
 
 
 ### Interface Segregation Principle
+Clients should not be forced to depend on methods that they do not use.
+
+Interfaces should belong to clients, not to libraries or hierarchies. Application developers should favor thin, focused interfaces to “fat” interfaces that offer more functionality than a particular class or method needs.
+
+Another benefit of smaller interfaces is that they are easier to implement fully, and thus less likely to break the Liskov Substitution Principle by being only partially implemented. 
+
+
 
 
 ### Dependency Inversion Principle

@@ -3,20 +3,23 @@
 //
 
 #include <iostream>
-#include <cstdio>
+#include <fstream>
 #include <string>
+#include <vector>
+#include <boost/lexical_cast.hpp>
+using namespace std;
 
 
 struct Journal {
     string title;
     vector<string> entries;
 
-    Journal(const string &title) : title(title) {}
+    explicit Journal(const string &title) : title(title) {}
 
     void add_entry(const string &entry)
     {
         static int count = 1;
-        entries.push_back(lexical_cast<string>(count++) + ":" + entry);
+        entries.push_back(boost::lexical_cast<string>(count++) + ":" + entry);
 
     }
 
@@ -56,9 +59,8 @@ int main() {
     journal.save("diary.txt");
 
     PersistenceManager pm;
-    pm.save(journal, "diary.txt")
+    pm.save(journal, "diary.txt");
 
-    getcahr();
     return 0;
 }
 

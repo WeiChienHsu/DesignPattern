@@ -2,12 +2,15 @@
 // Created by weichien on 30/09/2018.
 //
 
+#include <iostream>
+
 class Rectangle
 {
 protected:
     int width, height;
 public:
-    Rectangle(int width, int height) : width(width), height(height){}
+    Rectangle(const int width, const int height)
+            : width{width}, height{height} { }
 
     int getWidth() const {
         return width;
@@ -17,40 +20,39 @@ public:
         return height;
     }
 
-    virtual void setWidth(int width) {
+    void setWidth(int width) {
         Rectangle::width = width;
     }
 
-    virtual void setHeight(int height) {
+    void setHeight(int height) {
         Rectangle::height = height;
     }
 
-    int area() const {return height * width;}
+    int area() const { return width * height; }
 };
 
 class Square : public Rectangle
 {
 public:
-    Square(int size) : Rectangle(size, size) {}
-
-    void setWidth(int width) override {
-        this -> width = this -> height = width;
+    Square(int size): Rectangle(size,size) {}
+    void set_width(const int width) override {
+        this->width = height = width;
     }
-
-    void setHeight(int height) override
-    {
-        this -> width = this -> height = height;
+    void set_height(const int height) override {
+        this->height = width = height;
     }
 };
+
+
 
 /* Valid the case in Square */
 void process(Rectangle& r)
 {
     int w = r.getWidth();
-    r.setHeight(10); /* Also set Width as 10 in Square */
+    r.setWidth(10);
 
-    cout << "excepted area = " << (w*10)
-        << " , got " << r.area() << endl;
+    std::cout << "expected area = " << (w * 10)
+              << ", got " << r.area() << std::endl;
 }
 
 /* Factory : Should make child be substitable to any parent class */
@@ -59,7 +61,6 @@ struct RectangleFactory
     static Rectangle create_rectangle(int w, int h);
     static Rectangle create_square(int size);
 };
-
 
 int main() {
     Rectangle r{3, 4};
