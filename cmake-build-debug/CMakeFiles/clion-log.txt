@@ -1,35 +1,11 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/weichien/Programming/DesignPattern
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/FindBoost.cmake:577 (message):
-  Imported targets and dependency information not available for Boost version
-  (all versions older than 1.33)
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/FindBoost.cmake:963 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/FindBoost.cmake:1622 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:11 (find_package)
-
-
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/FindBoost.cmake:577 (message):
-  Imported targets and dependency information not available for Boost version
-  (all versions older than 1.33)
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/FindBoost.cmake:963 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/FindBoost.cmake:1622 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:11 (find_package)
-
-
-CMake Error at /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.12/Modules/FindBoost.cmake:2048 (message):
-  Unable to find the requested Boost libraries.
-
-  Unable to find the Boost header files.  Please set BOOST_ROOT to the root
-  directory containing Boost or BOOST_INCLUDEDIR to the directory containing
-  Boost's headers.
-Call Stack (most recent call first):
-  CMakeLists.txt:11 (find_package)
-
-
-CMake Error at CMakeLists.txt:14 (message):
-  Could not find boost!
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Boost version: 1.67.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+-- Boost_INCLUDE_DIRS: /usr/local/include
+-- Boost_LIBRARIES: /usr/local/lib/libboost_system-mt.dylib;/usr/local/lib/libboost_filesystem-mt.dylib
+-- Boost_VERSION: 106700
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/weichien/Programming/DesignPattern/cmake-build-debug

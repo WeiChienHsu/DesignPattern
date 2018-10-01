@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o"
   "CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o"
   "CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o"
+  "CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o"
   "DesignPattern.pdb"
   "DesignPattern"
 )

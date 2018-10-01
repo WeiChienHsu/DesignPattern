@@ -6,9 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/Users/weichien/Programming/DesignPattern/LiskovSubstitutionPrinciple.cpp
+/Users/weichien/Programming/DesignPattern/DependencyInversionPrinciple.cpp
+iostream
+-
+cstdio
+-
+string
+-
+vector
+-
+fstream
+-
+tuple
+-
+
+/Users/weichien/Programming/DesignPattern/InterfaceSegregationPrinciple.cpp
+
+/Users/weichien/Programming/DesignPattern/OpenClosedPrinciple.cpp
+string
+-
+vector
+-
 iostream
 -
 
-/Users/weichien/Programming/DesignPattern/main.cpp
+/Users/weichien/Programming/DesignPattern/SingleResponsibilityPrinciple.cpp
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+boost/lexical_cast.hpp
+-
 

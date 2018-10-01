@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/weichien/Programming/DesignPattern/DependencyInversionPrinciple.cpp">
+			<Option target="DesignPattern"/>
+		</Unit>
 		<Unit filename="/Users/weichien/Programming/DesignPattern/InterfaceSegregationPrinciple.cpp">
 			<Option target="DesignPattern"/>
 		</Unit>

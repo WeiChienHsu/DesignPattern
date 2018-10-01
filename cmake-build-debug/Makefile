@@ -123,6 +123,33 @@ DesignPattern/fast:
 	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/build
 .PHONY : DesignPattern/fast
 
+DependencyInversionPrinciple.o: DependencyInversionPrinciple.cpp.o
+
+.PHONY : DependencyInversionPrinciple.o
+
+# target to build an object file
+DependencyInversionPrinciple.cpp.o:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o
+.PHONY : DependencyInversionPrinciple.cpp.o
+
+DependencyInversionPrinciple.i: DependencyInversionPrinciple.cpp.i
+
+.PHONY : DependencyInversionPrinciple.i
+
+# target to preprocess a source file
+DependencyInversionPrinciple.cpp.i:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.i
+.PHONY : DependencyInversionPrinciple.cpp.i
+
+DependencyInversionPrinciple.s: DependencyInversionPrinciple.cpp.s
+
+.PHONY : DependencyInversionPrinciple.s
+
+# target to generate assembly for a file
+DependencyInversionPrinciple.cpp.s:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.s
+.PHONY : DependencyInversionPrinciple.cpp.s
+
 InterfaceSegregationPrinciple.o: InterfaceSegregationPrinciple.cpp.o
 
 .PHONY : InterfaceSegregationPrinciple.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DesignPattern"
+	@echo "... DependencyInversionPrinciple.o"
+	@echo "... DependencyInversionPrinciple.i"
+	@echo "... DependencyInversionPrinciple.s"
 	@echo "... InterfaceSegregationPrinciple.o"
 	@echo "... InterfaceSegregationPrinciple.i"
 	@echo "... InterfaceSegregationPrinciple.s"

@@ -3,48 +3,89 @@
 //
 
 using namespace std;
-using namespace boost;
+
 
 struct Document;
 
-struct IMachine
+/* Having Interfaces segregated */
+
+struct IPrinter
 {
     virtual void print(Document &doc) = 0;
+};
+
+struct IScanner
+{
     virtual void scan(Document &doc) = 0;
+};
+
+struct IFax
+{
     virtual void fax(Document &doc) = 0;
 };
 
-struct MFP : IMachine
+struct Printer : IPrinter {};
+
+struct Scanner : IScanner {};
+
+struct IMachine : IPrinter, IScanner {};
+
+struct Machine : IMachine
 {
+    IPrinter& printer;
+    IScanner& scanner;
+
+    Machine(IPrinter &printer, IScanner &scanner) :
+            printer(printer), scanner(scanner) {}
+
     void print(Document &doc) override {
-        // DO
+        printer.print(doc);
     }
 
     void scan(Document &doc) override {
-
-    }
-
-    void fax(Document &doc) override {
-
+        scanner.scan(doc);
     }
 };
 
-struct Scanner : IMachine
-{
-    void print(Document &doc) override {
-
-    }
-
-    void scan(Document &doc) override {
-        // DO
-    }
-
-    void fax(Document &doc) override {
-
-    }
-};
 
 int main()
 {
     return 0;
 }
+
+//struct IMachine
+//{
+//    virtual void print(Document &doc) = 0;
+//    virtual void scan(Document &doc) = 0;
+//    virtual void fax(Document &doc) = 0;
+//};
+//
+//struct MFP : IMachine
+//{
+//    void print(Document &doc) override {
+//        // DO
+//    }
+//
+//    void scan(Document &doc) override {
+//
+//    }
+//
+//    void fax(Document &doc) override {
+//
+//    }
+//};
+//
+//struct Scanner : IMachine
+//{
+//    void print(Document &doc) override {
+//
+//    }
+//
+//    void scan(Document &doc) override {
+//        // DO
+//    }
+//
+//    void fax(Document &doc) override {
+//
+//    }
+//};

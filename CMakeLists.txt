@@ -3,7 +3,7 @@ project(DesignPattern)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DesignPattern main.cpp InterfaceSegregationPrinciple.cpp LiskovSubstitutionPrinciple.cpp OpenClosedPrinciple.cpp SingleResponsibilityPrinciple.cpp)
+add_executable(DesignPattern main.cpp InterfaceSegregationPrinciple.cpp LiskovSubstitutionPrinciple.cpp OpenClosedPrinciple.cpp SingleResponsibilityPrinciple.cpp DependencyInversionPrinciple.cpp)
 
 
 set(BOOST_ROOT "/usr/local/Cellar/boost/1.65.1")

@@ -204,11 +204,181 @@ Interfaces should belong to clients, not to libraries or hierarchies. Applicatio
 
 Another benefit of smaller interfaces is that they are easier to implement fully, and thus less likely to break the Liskov Substitution Principle by being only partially implemented. 
 
+#### Bad Implementation: We gave client an interface that client could directly implement the method they need it.
 
+```c++
+struct IMachine
+{
+    virtual void print(Document &doc) = 0;
+    virtual void scan(Document &doc) = 0;
+    virtual void fax(Document &doc) = 0;
+};
+
+struct MFP : IMachine
+{
+    void print(Document &doc) override {
+        // DO
+    }
+
+    void scan(Document &doc) override {
+        // NULL VALUE
+    }
+
+    void fax(Document &doc) override {
+        // NULL VALUE
+    }
+};
+
+struct Scanner : IMachine
+{
+    void print(Document &doc) override {
+        // NULL VALUE
+    }
+
+    void scan(Document &doc) override {
+        // DO
+    }
+
+    void fax(Document &doc) override {
+        // NULL VALUE
+    }
+};
+```
+
+#### Make Iterfaces smaller
+```c++
+struct IPrinter
+{
+    virtual void print(Document &doc) = 0;
+};
+
+struct IScanner
+{
+    virtual void scan(Document &doc) = 0;
+};
+
+struct IFax
+{
+    virtual void fax(Document &doc) = 0;
+};
+
+struct Printer : IPrinter {};
+
+struct Scanner : IScanner {};
+
+struct IMachine : IPrinter, IScanner {};
+
+struct Machine : IMachine
+{
+    IPrinter& printer;
+    IScanner& scanner;
+
+    Machine(IPrinter &printer, IScanner &scanner) :
+            printer(printer), scanner(scanner) {}
+
+    void print(Document &doc) override {
+        printer.print(doc);
+    }
+
+    void scan(Document &doc) override {
+        scanner.scan(doc);
+    }
+};
+```
 
 
 ### Dependency Inversion Principle
 
+- High-Level Modules should not depend on Low-Level Modules. Both should depend on abstractions.
+
+- Abstractions should not depend on details. Details should depend on abstractions.
+
+- Should not depend on details of some body else's implementation.
+
+#### If the low-level module Relationships would like to make vector of relations becomes private or other type of data, then the high-level module Research would be crushed.
+
+```c++
+struct Relationships /* Low Level Modules */
+{
+    vector<tuple<Person, Relationship, Person>> relations;
+    void add_parent_and_child(const Person& parent, const Person& child)
+    {
+        relations.push_back({parent, Relationship :: parent, child});
+        relations.push_back({child, Relationship :: child, parent});
+    }
+};
+    
+struct Research /* High Level Modules */
+{
+  Research(Relationships& relationships)
+  {
+      auto& relations = relationships.relations;
+      for(auto &&[first, rel, second] : relations)
+      {
+          if(first.name == "John" && rel == Relationship::parent)
+          {
+            cout << "John has a child called" << second.name << endl;
+          }
+      }
+  }
+};
+
+int main() {
+    Person parent{"John"};
+    Person child1{"Chris"}, child2{"Matt"};
+    Relationships rs;
+    rs.add_parent_and_child(parent, child1);
+    rs.add_parent_and_child(parent, child2);
+
+    Research _(rs);
+    return 0;
+}
+```
+#### Have dependency on abstraction RelationshipBrowser
+
+```c++
+struct RelationshipBrowser
+{
+    virtual vector<Person> find_all_children_of(const string& name) = 0;
+};
+
+struct Relationships : RelationshipBrowser /* Low Level Modules */
+{
+    vector<tuple<Person, Relationship, Person>> relations;
+    void add_parent_and_child(const Person& parent, const Person& child)
+    {
+        relations.push_back({parent, Relationship :: parent, child});
+        relations.push_back({child, Relationship :: child, parent});
+    }
+
+    /* Implement the RelationshipBrowser */
+    vector<Person> find_all_children_of(const string &name) override {
+        vector<Person> result;
+        for(auto &&[first, rel, second] : relations)
+        {
+            if(first.name == name && rel == Relationship::parent)
+            {
+                result.push_back(second);
+            }
+        }
+        return result;
+    }
+};
+
+
+struct Research /* Have dependency on abstraction RelationshipBrowser */
+{
+    Research(RelationshipBrowser& browser)
+    {
+        for(auto& child : browser.find_all_children_of("John"))
+        {
+            cout << "John has a child called " << child.name << endl;
+        }
+    }
+};
+```
+
+***
 
 ## Creational 
 - Builder
