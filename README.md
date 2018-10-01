@@ -8,6 +8,38 @@ Common architectural approaches.
 
 ## SOLID Design Principle
 
+#### Single Responsibility Principle
+[Single Responsibility Principle](#single-responsibility-principle)
+
+- A class should only have one reason to change.
+- Separation of concerns - different classes handling different, independent tasks/problems.
+
+#### Open Closed Principle
+[Open Closed Principle](#open-closed-principle)
+
+- Classes should be open for extension but closed for modification.
+
+#### Liskov Substitution Principle
+[Liskov Substitution Principle](#liskov-substitution-principle)
+
+- You should be able to substitute a base type for a subtype.
+
+#### Interface Segregation Principle
+
+[Interface Segregation Principle](#interface-segregation-principle)
+
+- Don't put too much into an interface; split into separate interfaces
+- YAGNI - You Ain't Going to Need It
+
+#### Dependency Inversion Principle
+[Dependency Inversion Principle](#dependency-inversion-principle)
+
+- High-Level modules should not depend upon low-level ones; use abstraction.
+
+
+
+
+
 ### Single Responsibility Principle 
 A class should have single reason to change or take only one responsibility.
 
@@ -41,7 +73,7 @@ struct PersistenceManager
 };
 ```
 
-### Open-Closed Principle
+### Open Closed Principle
 Software entities (classes, modules, methods, etc.)  should be open for extension, but closed for modification.
 Avoid to jump into the code you have already writen.
 
