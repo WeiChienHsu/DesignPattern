@@ -22,7 +22,7 @@ Common architectural approaches.
 - Classes should be open for extension but closed for modification.
 
 
-<strong>[Liskov Substitution Principle](#liskov-substitution-principle)</<strong>>
+<strong>[Liskov Substitution Principle](#liskov-substitution-principle)</strong>
 
 - You should be able to substitute a base type for a subtype.
 
