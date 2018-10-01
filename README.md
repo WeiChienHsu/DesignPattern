@@ -72,7 +72,7 @@ struct PersistenceManager
 };
 ```
 
-<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<strong>[Back to SOLID Principle](#solid-design-principle)</strong>
 <br>
 
 ### Open Closed Principle
@@ -187,7 +187,7 @@ int main()
 
 ```
 
-<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<strong>[Back to SOLID Principle](#solid-design-principle)</strong>
 <br>
 
 ### Liskov Substitution Principle
@@ -228,7 +228,7 @@ int main() {
 }
 ```
 
-<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<strong>[Back to SOLID Principle](#solid-design-principle)</strong>
 <br>
 
 ### Interface Segregation Principle
@@ -320,7 +320,7 @@ struct Machine : IMachine
 };
 ```
 
-<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<strong>[Back to SOLID Principle](#solid-design-principle)</strong>
 <br>
 
 ### Dependency Inversion Principle
@@ -414,7 +414,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 };
 ```
 
-<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<strong>[Back to SOLID Principle](#solid-design-principle)</strong>
 <br>
 
 ***
