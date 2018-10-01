@@ -1,4 +1,4 @@
-# Design Pattern in C++ Learning Notes
+# Design Pattern in C++
 
 `
 Common architectural approaches.
@@ -9,8 +9,6 @@ Common architectural approaches.
 [References resources - Deviq](https://deviq.com/solid/)
 
 
-
-
 ## SOLID Design Principle
 
 <strong>[Single Responsibility Principle](#single-responsibility-principle)</strong>
@@ -18,19 +16,18 @@ Common architectural approaches.
 - A class should only have one reason to change.
 - Separation of concerns - different classes handling different, independent tasks/problems.
 
-#### Open Closed Principle
-[Open Closed Principle](#open-closed-principle)
+
+<strong>[Open Closed Principle](#open-closed-principle)</strong>
 
 - Classes should be open for extension but closed for modification.
 
-#### Liskov Substitution Principle
-[Liskov Substitution Principle](#liskov-substitution-principle)
+
+<strong>[Liskov Substitution Principle](#liskov-substitution-principle)</<strong>>
 
 - You should be able to substitute a base type for a subtype.
 
-#### Interface Segregation Principle
 
-[Interface Segregation Principle](#interface-segregation-principle)
+<strong>[Interface Segregation Principle](#interface-segregation-principle)</strong>
 
 - Don't put too much into an interface; split into separate interfaces
 - YAGNI - You Ain't Going to Need It
@@ -41,15 +38,13 @@ Common architectural approaches.
 - High-Level modules should not depend upon low-level ones; use abstraction.
 
 
-
-
-
 ### Single Responsibility Principle 
 A class should have single reason to change or take only one responsibility.
 
 All of the contents of a single class are tightly coupled together, since the class itself is a single unit that must either be entirely used or not at all (discounting static methods and data for the moment). When other classes make use of a particular class, and that class changes, the depending classes must be tested to ensure they continue to function correctly with the new behavior of the class. 
 
 We define each responsibility of a class as a reason for change.  If you can think of more than one motivation for changing a class, it probably has more than one responsibility.  When these axes of change occur, the class will probably need to have different aspects of its behavior changed, at different times and for different reasons.
+
 
 
 #### Some examples of responsibilities to consider that may need to be separated include:
@@ -77,11 +72,12 @@ struct PersistenceManager
 };
 ```
 
+<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<br>
+
 ### Open Closed Principle
 Software entities (classes, modules, methods, etc.)  should be open for extension, but closed for modification.
 Avoid to jump into the code you have already writen.
-
-
 
 ```c++
 /* Specification Interface */
@@ -191,6 +187,9 @@ int main()
 
 ```
 
+<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<br>
+
 ### Liskov Substitution Principle
 
 Subtypes must be substitutable for their base types.
@@ -229,9 +228,8 @@ int main() {
 }
 ```
 
-
-
-
+<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<br>
 
 ### Interface Segregation Principle
 Clients should not be forced to depend on methods that they do not use.
@@ -322,6 +320,8 @@ struct Machine : IMachine
 };
 ```
 
+<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<br>
 
 ### Dependency Inversion Principle
 
@@ -413,6 +413,9 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
     }
 };
 ```
+
+<strong>[Back to SOLID Principle](#solid-design-principle)</<strong>>
+<br>
 
 ***
 
