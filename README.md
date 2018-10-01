@@ -32,8 +32,7 @@ Common architectural approaches.
 - Don't put too much into an interface; split into separate interfaces
 - YAGNI - You Ain't Going to Need It
 
-#### Dependency Inversion Principle
-[Dependency Inversion Principle](#dependency-inversion-principle)
+<strong>[Dependency Inversion Principle](#dependency-inversion-principle)</strong>
 
 - High-Level modules should not depend upon low-level ones; use abstraction.
 
