@@ -70,89 +70,89 @@ CMakeFiles/DesignPattern.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/main.cpp -o CMakeFiles/DesignPattern.dir/main.cpp.s
 
-CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
-CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o: ../InterfaceSegregationPrinciple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/InterfaceSegregationPrinciple.cpp
+CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
+CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o: ../SOLID/InterfaceSegregationPrinciple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/SOLID/InterfaceSegregationPrinciple.cpp
 
-CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/InterfaceSegregationPrinciple.cpp > CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.i
+CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/SOLID/InterfaceSegregationPrinciple.cpp > CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.i
 
-CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/InterfaceSegregationPrinciple.cpp -o CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.s
+CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/SOLID/InterfaceSegregationPrinciple.cpp -o CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.s
 
-CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
-CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o: ../LiskovSubstitutionPrinciple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/LiskovSubstitutionPrinciple.cpp
+CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
+CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o: ../SOLID/LiskovSubstitutionPrinciple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/SOLID/LiskovSubstitutionPrinciple.cpp
 
-CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/LiskovSubstitutionPrinciple.cpp > CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.i
+CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/SOLID/LiskovSubstitutionPrinciple.cpp > CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.i
 
-CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/LiskovSubstitutionPrinciple.cpp -o CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.s
+CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/SOLID/LiskovSubstitutionPrinciple.cpp -o CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.s
 
-CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
-CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o: ../OpenClosedPrinciple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/OpenClosedPrinciple.cpp
+CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
+CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o: ../SOLID/OpenClosedPrinciple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/SOLID/OpenClosedPrinciple.cpp
 
-CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/OpenClosedPrinciple.cpp > CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.i
+CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/SOLID/OpenClosedPrinciple.cpp > CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.i
 
-CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/OpenClosedPrinciple.cpp -o CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.s
+CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/SOLID/OpenClosedPrinciple.cpp -o CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.s
 
-CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
-CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o: ../SingleResponsibilityPrinciple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/SingleResponsibilityPrinciple.cpp
+CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
+CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o: ../SOLID/SingleResponsibilityPrinciple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/SOLID/SingleResponsibilityPrinciple.cpp
 
-CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/SingleResponsibilityPrinciple.cpp > CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.i
+CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/SOLID/SingleResponsibilityPrinciple.cpp > CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.i
 
-CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/SingleResponsibilityPrinciple.cpp -o CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.s
+CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/SOLID/SingleResponsibilityPrinciple.cpp -o CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.s
 
-CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
-CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o: ../DependencyInversionPrinciple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/DependencyInversionPrinciple.cpp
+CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o: CMakeFiles/DesignPattern.dir/flags.make
+CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o: ../SOLID/DependencyInversionPrinciple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o -c /Users/weichien/Programming/DesignPattern/SOLID/DependencyInversionPrinciple.cpp
 
-CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/DependencyInversionPrinciple.cpp > CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.i
+CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/weichien/Programming/DesignPattern/SOLID/DependencyInversionPrinciple.cpp > CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.i
 
-CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/DependencyInversionPrinciple.cpp -o CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.s
+CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/weichien/Programming/DesignPattern/SOLID/DependencyInversionPrinciple.cpp -o CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.s
 
 # Object files for target DesignPattern
 DesignPattern_OBJECTS = \
 "CMakeFiles/DesignPattern.dir/main.cpp.o" \
-"CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o" \
-"CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o" \
-"CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o" \
-"CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o" \
-"CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o"
+"CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o" \
+"CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o" \
+"CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o" \
+"CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o" \
+"CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o"
 
 # External object files for target DesignPattern
 DesignPattern_EXTERNAL_OBJECTS =
 
 DesignPattern: CMakeFiles/DesignPattern.dir/main.cpp.o
-DesignPattern: CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o
-DesignPattern: CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o
-DesignPattern: CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o
-DesignPattern: CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o
-DesignPattern: CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o
+DesignPattern: CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o
+DesignPattern: CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o
+DesignPattern: CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o
+DesignPattern: CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o
+DesignPattern: CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o
 DesignPattern: CMakeFiles/DesignPattern.dir/build.make
 DesignPattern: CMakeFiles/DesignPattern.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable DesignPattern"

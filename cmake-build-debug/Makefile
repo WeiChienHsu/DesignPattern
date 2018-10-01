@@ -123,140 +123,140 @@ DesignPattern/fast:
 	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/build
 .PHONY : DesignPattern/fast
 
-DependencyInversionPrinciple.o: DependencyInversionPrinciple.cpp.o
+SOLID/DependencyInversionPrinciple.o: SOLID/DependencyInversionPrinciple.cpp.o
 
-.PHONY : DependencyInversionPrinciple.o
-
-# target to build an object file
-DependencyInversionPrinciple.cpp.o:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o
-.PHONY : DependencyInversionPrinciple.cpp.o
-
-DependencyInversionPrinciple.i: DependencyInversionPrinciple.cpp.i
-
-.PHONY : DependencyInversionPrinciple.i
-
-# target to preprocess a source file
-DependencyInversionPrinciple.cpp.i:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.i
-.PHONY : DependencyInversionPrinciple.cpp.i
-
-DependencyInversionPrinciple.s: DependencyInversionPrinciple.cpp.s
-
-.PHONY : DependencyInversionPrinciple.s
-
-# target to generate assembly for a file
-DependencyInversionPrinciple.cpp.s:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.s
-.PHONY : DependencyInversionPrinciple.cpp.s
-
-InterfaceSegregationPrinciple.o: InterfaceSegregationPrinciple.cpp.o
-
-.PHONY : InterfaceSegregationPrinciple.o
+.PHONY : SOLID/DependencyInversionPrinciple.o
 
 # target to build an object file
-InterfaceSegregationPrinciple.cpp.o:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o
-.PHONY : InterfaceSegregationPrinciple.cpp.o
+SOLID/DependencyInversionPrinciple.cpp.o:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o
+.PHONY : SOLID/DependencyInversionPrinciple.cpp.o
 
-InterfaceSegregationPrinciple.i: InterfaceSegregationPrinciple.cpp.i
+SOLID/DependencyInversionPrinciple.i: SOLID/DependencyInversionPrinciple.cpp.i
 
-.PHONY : InterfaceSegregationPrinciple.i
+.PHONY : SOLID/DependencyInversionPrinciple.i
 
 # target to preprocess a source file
-InterfaceSegregationPrinciple.cpp.i:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.i
-.PHONY : InterfaceSegregationPrinciple.cpp.i
+SOLID/DependencyInversionPrinciple.cpp.i:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.i
+.PHONY : SOLID/DependencyInversionPrinciple.cpp.i
 
-InterfaceSegregationPrinciple.s: InterfaceSegregationPrinciple.cpp.s
+SOLID/DependencyInversionPrinciple.s: SOLID/DependencyInversionPrinciple.cpp.s
 
-.PHONY : InterfaceSegregationPrinciple.s
+.PHONY : SOLID/DependencyInversionPrinciple.s
 
 # target to generate assembly for a file
-InterfaceSegregationPrinciple.cpp.s:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.s
-.PHONY : InterfaceSegregationPrinciple.cpp.s
+SOLID/DependencyInversionPrinciple.cpp.s:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.s
+.PHONY : SOLID/DependencyInversionPrinciple.cpp.s
 
-LiskovSubstitutionPrinciple.o: LiskovSubstitutionPrinciple.cpp.o
+SOLID/InterfaceSegregationPrinciple.o: SOLID/InterfaceSegregationPrinciple.cpp.o
 
-.PHONY : LiskovSubstitutionPrinciple.o
+.PHONY : SOLID/InterfaceSegregationPrinciple.o
 
 # target to build an object file
-LiskovSubstitutionPrinciple.cpp.o:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o
-.PHONY : LiskovSubstitutionPrinciple.cpp.o
+SOLID/InterfaceSegregationPrinciple.cpp.o:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o
+.PHONY : SOLID/InterfaceSegregationPrinciple.cpp.o
 
-LiskovSubstitutionPrinciple.i: LiskovSubstitutionPrinciple.cpp.i
+SOLID/InterfaceSegregationPrinciple.i: SOLID/InterfaceSegregationPrinciple.cpp.i
 
-.PHONY : LiskovSubstitutionPrinciple.i
+.PHONY : SOLID/InterfaceSegregationPrinciple.i
 
 # target to preprocess a source file
-LiskovSubstitutionPrinciple.cpp.i:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.i
-.PHONY : LiskovSubstitutionPrinciple.cpp.i
+SOLID/InterfaceSegregationPrinciple.cpp.i:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.i
+.PHONY : SOLID/InterfaceSegregationPrinciple.cpp.i
 
-LiskovSubstitutionPrinciple.s: LiskovSubstitutionPrinciple.cpp.s
+SOLID/InterfaceSegregationPrinciple.s: SOLID/InterfaceSegregationPrinciple.cpp.s
 
-.PHONY : LiskovSubstitutionPrinciple.s
+.PHONY : SOLID/InterfaceSegregationPrinciple.s
 
 # target to generate assembly for a file
-LiskovSubstitutionPrinciple.cpp.s:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.s
-.PHONY : LiskovSubstitutionPrinciple.cpp.s
+SOLID/InterfaceSegregationPrinciple.cpp.s:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.s
+.PHONY : SOLID/InterfaceSegregationPrinciple.cpp.s
 
-OpenClosedPrinciple.o: OpenClosedPrinciple.cpp.o
+SOLID/LiskovSubstitutionPrinciple.o: SOLID/LiskovSubstitutionPrinciple.cpp.o
 
-.PHONY : OpenClosedPrinciple.o
+.PHONY : SOLID/LiskovSubstitutionPrinciple.o
 
 # target to build an object file
-OpenClosedPrinciple.cpp.o:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o
-.PHONY : OpenClosedPrinciple.cpp.o
+SOLID/LiskovSubstitutionPrinciple.cpp.o:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o
+.PHONY : SOLID/LiskovSubstitutionPrinciple.cpp.o
 
-OpenClosedPrinciple.i: OpenClosedPrinciple.cpp.i
+SOLID/LiskovSubstitutionPrinciple.i: SOLID/LiskovSubstitutionPrinciple.cpp.i
 
-.PHONY : OpenClosedPrinciple.i
+.PHONY : SOLID/LiskovSubstitutionPrinciple.i
 
 # target to preprocess a source file
-OpenClosedPrinciple.cpp.i:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.i
-.PHONY : OpenClosedPrinciple.cpp.i
+SOLID/LiskovSubstitutionPrinciple.cpp.i:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.i
+.PHONY : SOLID/LiskovSubstitutionPrinciple.cpp.i
 
-OpenClosedPrinciple.s: OpenClosedPrinciple.cpp.s
+SOLID/LiskovSubstitutionPrinciple.s: SOLID/LiskovSubstitutionPrinciple.cpp.s
 
-.PHONY : OpenClosedPrinciple.s
+.PHONY : SOLID/LiskovSubstitutionPrinciple.s
 
 # target to generate assembly for a file
-OpenClosedPrinciple.cpp.s:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.s
-.PHONY : OpenClosedPrinciple.cpp.s
+SOLID/LiskovSubstitutionPrinciple.cpp.s:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.s
+.PHONY : SOLID/LiskovSubstitutionPrinciple.cpp.s
 
-SingleResponsibilityPrinciple.o: SingleResponsibilityPrinciple.cpp.o
+SOLID/OpenClosedPrinciple.o: SOLID/OpenClosedPrinciple.cpp.o
 
-.PHONY : SingleResponsibilityPrinciple.o
+.PHONY : SOLID/OpenClosedPrinciple.o
 
 # target to build an object file
-SingleResponsibilityPrinciple.cpp.o:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o
-.PHONY : SingleResponsibilityPrinciple.cpp.o
+SOLID/OpenClosedPrinciple.cpp.o:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o
+.PHONY : SOLID/OpenClosedPrinciple.cpp.o
 
-SingleResponsibilityPrinciple.i: SingleResponsibilityPrinciple.cpp.i
+SOLID/OpenClosedPrinciple.i: SOLID/OpenClosedPrinciple.cpp.i
 
-.PHONY : SingleResponsibilityPrinciple.i
+.PHONY : SOLID/OpenClosedPrinciple.i
 
 # target to preprocess a source file
-SingleResponsibilityPrinciple.cpp.i:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.i
-.PHONY : SingleResponsibilityPrinciple.cpp.i
+SOLID/OpenClosedPrinciple.cpp.i:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.i
+.PHONY : SOLID/OpenClosedPrinciple.cpp.i
 
-SingleResponsibilityPrinciple.s: SingleResponsibilityPrinciple.cpp.s
+SOLID/OpenClosedPrinciple.s: SOLID/OpenClosedPrinciple.cpp.s
 
-.PHONY : SingleResponsibilityPrinciple.s
+.PHONY : SOLID/OpenClosedPrinciple.s
 
 # target to generate assembly for a file
-SingleResponsibilityPrinciple.cpp.s:
-	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.s
-.PHONY : SingleResponsibilityPrinciple.cpp.s
+SOLID/OpenClosedPrinciple.cpp.s:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.s
+.PHONY : SOLID/OpenClosedPrinciple.cpp.s
+
+SOLID/SingleResponsibilityPrinciple.o: SOLID/SingleResponsibilityPrinciple.cpp.o
+
+.PHONY : SOLID/SingleResponsibilityPrinciple.o
+
+# target to build an object file
+SOLID/SingleResponsibilityPrinciple.cpp.o:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o
+.PHONY : SOLID/SingleResponsibilityPrinciple.cpp.o
+
+SOLID/SingleResponsibilityPrinciple.i: SOLID/SingleResponsibilityPrinciple.cpp.i
+
+.PHONY : SOLID/SingleResponsibilityPrinciple.i
+
+# target to preprocess a source file
+SOLID/SingleResponsibilityPrinciple.cpp.i:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.i
+.PHONY : SOLID/SingleResponsibilityPrinciple.cpp.i
+
+SOLID/SingleResponsibilityPrinciple.s: SOLID/SingleResponsibilityPrinciple.cpp.s
+
+.PHONY : SOLID/SingleResponsibilityPrinciple.s
+
+# target to generate assembly for a file
+SOLID/SingleResponsibilityPrinciple.cpp.s:
+	$(MAKE) -f CMakeFiles/DesignPattern.dir/build.make CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.s
+.PHONY : SOLID/SingleResponsibilityPrinciple.cpp.s
 
 main.o: main.cpp.o
 
@@ -294,21 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DesignPattern"
-	@echo "... DependencyInversionPrinciple.o"
-	@echo "... DependencyInversionPrinciple.i"
-	@echo "... DependencyInversionPrinciple.s"
-	@echo "... InterfaceSegregationPrinciple.o"
-	@echo "... InterfaceSegregationPrinciple.i"
-	@echo "... InterfaceSegregationPrinciple.s"
-	@echo "... LiskovSubstitutionPrinciple.o"
-	@echo "... LiskovSubstitutionPrinciple.i"
-	@echo "... LiskovSubstitutionPrinciple.s"
-	@echo "... OpenClosedPrinciple.o"
-	@echo "... OpenClosedPrinciple.i"
-	@echo "... OpenClosedPrinciple.s"
-	@echo "... SingleResponsibilityPrinciple.o"
-	@echo "... SingleResponsibilityPrinciple.i"
-	@echo "... SingleResponsibilityPrinciple.s"
+	@echo "... SOLID/DependencyInversionPrinciple.o"
+	@echo "... SOLID/DependencyInversionPrinciple.i"
+	@echo "... SOLID/DependencyInversionPrinciple.s"
+	@echo "... SOLID/InterfaceSegregationPrinciple.o"
+	@echo "... SOLID/InterfaceSegregationPrinciple.i"
+	@echo "... SOLID/InterfaceSegregationPrinciple.s"
+	@echo "... SOLID/LiskovSubstitutionPrinciple.o"
+	@echo "... SOLID/LiskovSubstitutionPrinciple.i"
+	@echo "... SOLID/LiskovSubstitutionPrinciple.s"
+	@echo "... SOLID/OpenClosedPrinciple.o"
+	@echo "... SOLID/OpenClosedPrinciple.i"
+	@echo "... SOLID/OpenClosedPrinciple.s"
+	@echo "... SOLID/SingleResponsibilityPrinciple.o"
+	@echo "... SOLID/SingleResponsibilityPrinciple.i"
+	@echo "... SOLID/SingleResponsibilityPrinciple.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

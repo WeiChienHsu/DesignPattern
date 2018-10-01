@@ -82,19 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/weichien/Programming/DesignPattern/DependencyInversionPrinciple.cpp">
+		<Unit filename="/Users/weichien/Programming/DesignPattern/SOLID/DependencyInversionPrinciple.cpp">
 			<Option target="DesignPattern"/>
 		</Unit>
-		<Unit filename="/Users/weichien/Programming/DesignPattern/InterfaceSegregationPrinciple.cpp">
+		<Unit filename="/Users/weichien/Programming/DesignPattern/SOLID/InterfaceSegregationPrinciple.cpp">
 			<Option target="DesignPattern"/>
 		</Unit>
-		<Unit filename="/Users/weichien/Programming/DesignPattern/LiskovSubstitutionPrinciple.cpp">
+		<Unit filename="/Users/weichien/Programming/DesignPattern/SOLID/LiskovSubstitutionPrinciple.cpp">
 			<Option target="DesignPattern"/>
 		</Unit>
-		<Unit filename="/Users/weichien/Programming/DesignPattern/OpenClosedPrinciple.cpp">
+		<Unit filename="/Users/weichien/Programming/DesignPattern/SOLID/OpenClosedPrinciple.cpp">
 			<Option target="DesignPattern"/>
 		</Unit>
-		<Unit filename="/Users/weichien/Programming/DesignPattern/SingleResponsibilityPrinciple.cpp">
+		<Unit filename="/Users/weichien/Programming/DesignPattern/SOLID/SingleResponsibilityPrinciple.cpp">
 			<Option target="DesignPattern"/>
 		</Unit>
 		<Unit filename="/Users/weichien/Programming/DesignPattern/main.cpp">

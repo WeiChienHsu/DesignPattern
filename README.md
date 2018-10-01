@@ -1,15 +1,19 @@
 # Design Pattern in C++ Learning Notes
 
+`
+Common architectural approaches.
+`
+
 [Course Link](https://www.udemy.com/patterns-cplusplus/)
+
 [References resources - Deviq](https://deviq.com/solid/)
 
-Common architectural approaches.
+
 
 
 ## SOLID Design Principle
 
-#### Single Responsibility Principle
-[Single Responsibility Principle](#single-responsibility-principle)
+<strong>[Single Responsibility Principle](#single-responsibility-principle)</strong>
 
 - A class should only have one reason to change.
 - Separation of concerns - different classes handling different, independent tasks/problems.
@@ -418,6 +422,12 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 - Prototype
 - Singleton
 
+
+
+
+***
+
+
 ## Structural 
 - Adapter
 - Bridge
@@ -426,6 +436,8 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 - Facade
 - Flyweight
 - Proxy
+
+***
 
 ## Behavioral
 - Chain of Responsibility

@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/weichien/Programming/DesignPattern/DependencyInversionPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/DependencyInversionPrinciple.cpp.o"
-  "/Users/weichien/Programming/DesignPattern/InterfaceSegregationPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/InterfaceSegregationPrinciple.cpp.o"
-  "/Users/weichien/Programming/DesignPattern/LiskovSubstitutionPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/LiskovSubstitutionPrinciple.cpp.o"
-  "/Users/weichien/Programming/DesignPattern/OpenClosedPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/OpenClosedPrinciple.cpp.o"
-  "/Users/weichien/Programming/DesignPattern/SingleResponsibilityPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/SingleResponsibilityPrinciple.cpp.o"
+  "/Users/weichien/Programming/DesignPattern/SOLID/DependencyInversionPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/SOLID/DependencyInversionPrinciple.cpp.o"
+  "/Users/weichien/Programming/DesignPattern/SOLID/InterfaceSegregationPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/SOLID/InterfaceSegregationPrinciple.cpp.o"
+  "/Users/weichien/Programming/DesignPattern/SOLID/LiskovSubstitutionPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/SOLID/LiskovSubstitutionPrinciple.cpp.o"
+  "/Users/weichien/Programming/DesignPattern/SOLID/OpenClosedPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/SOLID/OpenClosedPrinciple.cpp.o"
+  "/Users/weichien/Programming/DesignPattern/SOLID/SingleResponsibilityPrinciple.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/SOLID/SingleResponsibilityPrinciple.cpp.o"
   "/Users/weichien/Programming/DesignPattern/main.cpp" "/Users/weichien/Programming/DesignPattern/cmake-build-debug/CMakeFiles/DesignPattern.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
