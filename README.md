@@ -5,6 +5,22 @@ Common architectural approaches.
 `
 
 
+<strong>[SOLID Design Principle](#solid-design-principle)</strong>
+
+
+<strong>[Creational Patterns](#creational-patterns)</strong>
+
+
+<strong>[Structural Patterns](#structural-patterns)</strong>
+
+
+<strong>[Behavioral Patterns](#behavioral-patterns)</strong>
+
+<strong>[Reference Credits](#reference-credits)</strong>
+
+***
+
+
 ## SOLID Design Principle
 
 <strong>[Single Responsibility Principle](#single-responsibility-principle)</strong>
@@ -414,7 +430,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-# Creational Patterns
+## Creational Patterns
 <strong> [Builder](#builder) </strong>
 
 <strong> [Factories](#factories) </strong>
@@ -423,7 +439,51 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 <strong> [Singleton](#singleton) </strong>
 
-## Builder
+### Builder
+
+- Some objects are simple and can be created in a single constructor call.
+- Other objects require a lot of ceremony to create.
+- Having an object with 10 constructor arguments is not productive.
+- Instead, opt for piecewise construction.
+- Builder provides an API for constructing an object step-by-step
+
+
+```c++
+struct HtmlBuilder
+{
+    HtmlElement root;
+
+    HtmlBuilder(string root_name)
+    {
+        root.name = root_name;
+    }
+
+    /* Fluent Interface : Return a Reference */
+    HtmlBuilder& add_child(string child_name, string child_text)
+    {
+        HtmlElement e{ child_name, child_text };
+        root.elements.emplace_back(e);
+        return *this;
+    }
+
+    /* Fluent Interface : Return a Pointer */
+    HtmlBuilder* add_child_2(string child_name, string child_text)
+    {
+        HtmlElement e{ child_name, child_text };
+        root.elements.emplace_back(e);
+        return this;
+    }
+
+    string str() const {return root.str();}
+
+};
+```
+
+### Builder Facets
+
+
+
+
 
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
@@ -431,7 +491,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Factories
+### Factories
 
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
@@ -439,7 +499,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Prototype
+### Prototype
 
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
@@ -448,7 +508,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Singleton
+### Singleton
 
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
@@ -475,7 +535,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Adapter
+### Adapter
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -484,7 +544,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Bridge
+### Bridge
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -493,7 +553,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Composite
+### Composite
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -502,7 +562,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Decorator
+### Decorator
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -511,7 +571,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Facade
+### Facade
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -520,7 +580,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Flyweight
+### Flyweight
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -528,7 +588,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Proxy
+### Proxy
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -561,7 +621,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 <strong> [Visitor](#visitor) </strong>
 
 
-## Chain of Responsibility
+### Chain of Responsibility
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -570,7 +630,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 ***
 
 
-## Command
+### Command
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -578,7 +638,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Interpreter
+### Interpreter
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -586,7 +646,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Iterator
+### Iterator
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -594,7 +654,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Mediator
+### Mediator
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -602,7 +662,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Memento
+### Memento
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -610,7 +670,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Observer
+### Observer
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -618,7 +678,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## State
+### State
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -626,7 +686,7 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Stategy
+### Stategy
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -634,14 +694,14 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ***
 
-## Template Method
+### Template Method
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
 
 ***
 
-## Visitor
+### Visitor
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
