@@ -441,6 +441,8 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 
 ### Builder
 
+將一個複雜的構建過程與其具表示細節相分離，使得同樣的構建過程可以創建不同的表示。
+
 - Some objects are simple and can be created in a single constructor call.
 - Other objects require a lot of ceremony to create.
 - Having an object with 10 constructor arguments is not productive.
@@ -479,7 +481,7 @@ struct HtmlBuilder
 };
 ```
 
-### Builder Coding Exercise
+#### Builder Coding Exercise
 
 ```c++
 #include <string>
@@ -564,6 +566,7 @@ int main()
 
 ### Factories
 
+不同條件下創建不同實例。
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
 <br>
@@ -571,6 +574,8 @@ int main()
 ***
 
 ### Prototype
+
+通過拷貝原型創建新的對象。
 
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
@@ -581,6 +586,7 @@ int main()
 
 ### Singleton
 
+保證一個類僅有一個實例。
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
 <br>
@@ -608,6 +614,8 @@ int main()
 
 ### Adapter
 
+使得原本由於接口不兼容而不能一起工作的那些類可以一起工作。
+
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
 <br>
@@ -617,6 +625,7 @@ int main()
 
 ### Bridge
 
+兩個維度獨立變化，依賴方式實現抽象與實現分離：需要一個作為橋接的接口/抽象類，多個角度的實現類依賴注入到抽象類，使它們在抽象層建立一個關聯關係。
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
 <br>
@@ -626,6 +635,7 @@ int main()
 
 ### Composite
 
+用戶對單個對象和組合對象的使用具有一致性的統一接口。
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
 <br>
@@ -635,6 +645,7 @@ int main()
 
 ### Decorator
 
+保持接口，增強性能：修飾類繼承被修飾對象的抽象父類，依賴被修飾對象的實例（被修飾對象依賴注入），以實現接口擴展。
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
 <br>
@@ -643,6 +654,8 @@ int main()
 ***
 
 ### Facade
+
+在客戶端和複雜系統之間再加一層，這一次將調用順序、依賴關係等處理好。即封裝底層實現，隱藏系統的複雜性，並向客戶端提供了一個客戶端可以訪問系統的高層接口
 
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
@@ -653,6 +666,7 @@ int main()
 
 ### Flyweight
 
+享元工廠類控制；HashMap實現緩衝池重用現有的同類對象，如果未找到匹配的對象，則創建新對象
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
 <br>
@@ -661,6 +675,7 @@ int main()
 
 ### Proxy
 
+為其他對象提供一種代理以控制對這個對象的訪問：增加中間層（代理層），代理類與底層實現類實現共同接口，並創建底層實現類對象（底層實現類對象依賴注入代理類），以便向外界提供功能接口。
 
 <strong>[Back to Structural Patterns](#structural-patterns)</strong>
 <br>
@@ -694,6 +709,7 @@ int main()
 
 ### Chain of Responsibility
 
+攔截的類都實現統一接口，每個接收者都包含對下一個接收者的引用。將這些對象連接成一條鏈，並且沿著這條鏈傳遞請求，直到有對象處理它為止。
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
@@ -703,6 +719,8 @@ int main()
 
 ### Command
 
+將"行為請求者"與"行為實現者"解耦：調用者依賴命令，命令依賴接收者，調用者Invoker→命令Command→接收者Receiver。
+
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
@@ -711,6 +729,7 @@ int main()
 
 ### Interpreter
 
+給定一個語言，定義它的文法表示，並定義一個解釋器，這個解釋器使用該標識來解釋語言中的句子。
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
@@ -719,6 +738,7 @@ int main()
 
 ### Iterator
 
+集合中含有迭代器：分離了集合對象的遍歷行為，抽象出一個迭代器類來負責，無須暴露該對象的內部表示。
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
@@ -726,6 +746,8 @@ int main()
 ***
 
 ### Mediator
+
+對象與對象之間存在大量的關聯關係，將對象之間的通信關聯關係封裝到一個中介類中單獨處理，從而使其耦合鬆散，可以獨立地改變它們之間的交互。
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -735,6 +757,8 @@ int main()
 
 ### Memento
 
+通過一個備忘錄類專門存儲對象狀態。客戶通過備忘錄管理類管理備忘錄類。
+
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
@@ -742,6 +766,8 @@ int main()
 ***
 
 ### Observer
+
+一對多的依賴關係，在觀察目標類里有一個 ArrayList 存放觀察者們。當觀察目標對象的狀態發生改變，所有依賴於它的觀察者都將得到通知，使這些觀察者能夠自動更新。（即使用推送方式）
 
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
@@ -751,6 +777,8 @@ int main()
 
 ### State
 
+狀態對象依賴注入到context對象，context對象根據它的狀態改變而改變它的相關行為(可通過調用內部的狀態對象實現相應的具體行為)
+
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
@@ -759,6 +787,7 @@ int main()
 
 ### Stategy
 
+策略對象依賴注入到context對象，context對象根據它的策略改變而改變它的相關行為(可通過調用內部的策略對象實現相應的具體策略行為)
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
@@ -766,6 +795,8 @@ int main()
 ***
 
 ### Template Method
+
+將這些通用算法抽象出來，在一個抽象類中公開定義了執行它的方法的方式/模板。它的子類可以按需要重寫方法實現，但調用將以抽象類中定義的方式進行。
 
 <strong>[Back to Behavioral Patterns](#behavioral-patterns)</strong>
 <br>
