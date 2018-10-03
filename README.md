@@ -568,6 +568,112 @@ int main()
 
 不同條件下創建不同實例。
 
+A component responsibile solely for the wholesale (not piecewise) creation of objects.
+
+- Object creation logic becomes too convoluted.
+- Constructor is not descriptive. (Cannot overload with smae sets of arguments with different names)
+- Object creation(non-piecewise, unlike Builder) can be outsourced to.
+- A separate funciton (Factory Method)
+- That may exist in a separate class (Factory)
+
+
+#### Dont allow to redeclare the constructor with same types of arguments.
+
+```c++
+struct Point
+{
+    float x, y;
+    Point(float x, float y) : x(x), y(y) {}
+    Point(float rho, float theta) {
+    }
+};
+```
+
+#### Instead we use anotehr ENUM class to represent PointType
+
+```c++
+struct Point
+{
+    float x, y;
+
+    //! 
+    //! \param a this is either x or tho
+    //! \param b this is either y or theta
+    //! \param type
+    Point(float a, float b, PointType type = PointType::cartesian)
+    {
+        if(type == PointType::cartesian)
+        {
+            x = a;
+            y = b;
+        } else {
+            x = a * cos(b);
+            y = b * sin(b);
+        }
+    }
+};
+```
+
+#### We still can opt to make our users know much clearly about the Interfaces
+
+```c++
+struct Point
+{
+
+    Point(float x, float y) : x(x), y(y) {}
+public:
+    float x, y;
+
+    static Point NewCartesian(float x, float y)
+    {
+        return {x, y};
+    }
+
+    static Point NewPolar(float r, float theta)
+    {
+        return {r*cos(theta), r*sin(theta)};
+    }
+
+    friend ostream &operator<<(ostream &os, const Point &point) {
+        os << "x: " << point.x << " y: " << point.y;
+        return os;
+    }
+
+};
+```
+
+#### Still can improve by add a Factory but inteads of adding PointFactory as a friend class into Point (no valid in Open-Close Principle), we can make all variable and mehtods in Point Public
+
+```c++
+
+struct Point
+{
+public:
+    float x, y;
+
+    Point(float x, float y) : x(x), y(y) {}
+
+    friend ostream &operator<<(ostream &os, const Point &point) {
+        os << "x: " << point.x << " y: " << point.y;
+        return os;
+    }
+
+};
+
+struct PointFactory
+{
+    static Point NewCartesian(float x, float y)
+    {
+        return {x, y};
+    }
+
+    static Point NewPolar(float r, float theta)
+    {
+        return {r*cos(theta), r*sin(theta)};
+    }
+};
+```
+
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
 <br>
 
