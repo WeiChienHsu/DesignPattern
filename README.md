@@ -433,6 +433,8 @@ struct Research /* Have dependency on abstraction RelationshipBrowser */
 ## Creational Patterns
 <strong> [Builder](#builder) </strong>
 
+<strong> [Abstract Factories](#abstract-factories) </strong>
+
 <strong> [Factories](#factories) </strong>
 
 <strong> [Prototype](#prototype) </strong>
@@ -673,6 +675,58 @@ struct PointFactory
     }
 };
 ```
+
+#### Inner Factory : Make user have clear API to know what they should do
+
+```c++
+class Point
+{
+    Point(float x, float y) : x(x), y(y) {}
+
+    class PointFactory
+    {
+        PointFactory() {}
+
+    public:
+        static Point NewCartesian(float x, float y)
+        {
+            return { x,y };
+        }
+        static Point NewPolar(float r, float theta)
+        {
+            return{ r*cos(theta), r*sin(theta) };
+        }
+    };
+
+public:
+    float x, y;
+    static PointFactory Factory;
+
+    friend ostream &operator<<(ostream &os, const Point &point) {
+        os << "x: " << point.x << " y: " << point.y;
+        return os;
+    }
+};
+
+int main()
+{
+    auto p = Point::Factory.NewCartesian(2, 3);
+    cout << p << endl;
+    return 0;
+}
+```
+
+
+<strong>[Back to Creational Patterns](#creational-patterns)</strong>
+<br>
+
+***
+
+### Abstract Factories
+
+
+
+
 
 <strong>[Back to Creational Patterns](#creational-patterns)</strong>
 <br>

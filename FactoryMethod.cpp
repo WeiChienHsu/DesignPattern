@@ -1,31 +1,34 @@
-//
-// Created by weichien on 03/10/2018.
-//
-#define _USE_MATH_DEFINES
-
-#include <iostream>
-#include <cstdio>
-#include <string>
-#include <vector>
+#include <cmath>
+#include <ostream>
 #include <fstream>
-#include <tuple>
 #include <sstream>
 #include <memory>
-#include <cmath>
+#include <tuple>
+#include <iostream>
 using namespace std;
 
-enum class PointType
+class Point
 {
-    cartesian,
-    polar
-};
+    // use a factory method
+    Point(float x, float y) : x(x), y(y) {}
 
-struct Point
-{
+    class PointFactory
+    {
+        PointFactory() {}
+    public:
+        static Point NewCartesian(float x, float y)
+        {
+            return { x,y };
+        }
+        static Point NewPolar(float r, float theta)
+        {
+            return{ r*cos(theta), r*sin(theta) };
+        }
+    };
+
 public:
     float x, y;
-
-    Point(float x, float y) : x(x), y(y) {}
+    static PointFactory Factory;
 
     friend ostream &operator<<(ostream &os, const Point &point) {
         os << "x: " << point.x << " y: " << point.y;
@@ -34,24 +37,9 @@ public:
 
 };
 
-struct PointFactory
-{
-    static Point NewCartesian(float x, float y)
-    {
-        return {x, y};
-    }
-
-    static Point NewPolar(float r, float theta)
-    {
-        return {r*cos(theta), r*sin(theta)};
-    }
-};
-
 int main()
 {
-    auto p = PointFactory::NewPolar(5, M_PI_4);
+    auto p = Point::Factory.NewCartesian(2, 3);
     cout << p << endl;
-
-
     return 0;
 }
